@@ -34,6 +34,7 @@
             this.btnHitungMk = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.txtHasil = new System.Windows.Forms.TextBox();
+            this.btnHitungDosen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -47,7 +48,7 @@
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(139, 341);
+            this.btnConnect.Location = new System.Drawing.Point(148, 305);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(92, 31);
             this.btnConnect.TabIndex = 1;
@@ -57,9 +58,9 @@
             // 
             // btnHitungMhs
             // 
-            this.btnHitungMhs.Location = new System.Drawing.Point(294, 340);
+            this.btnHitungMhs.Location = new System.Drawing.Point(297, 305);
             this.btnHitungMhs.Name = "btnHitungMhs";
-            this.btnHitungMhs.Size = new System.Drawing.Size(80, 32);
+            this.btnHitungMhs.Size = new System.Drawing.Size(96, 32);
             this.btnHitungMhs.TabIndex = 2;
             this.btnHitungMhs.Text = "HitungMhs";
             this.btnHitungMhs.UseVisualStyleBackColor = true;
@@ -67,17 +68,16 @@
             // 
             // btnHitungMk
             // 
-            this.btnHitungMk.Location = new System.Drawing.Point(445, 340);
+            this.btnHitungMk.Location = new System.Drawing.Point(444, 305);
             this.btnHitungMk.Name = "btnHitungMk";
-            this.btnHitungMk.Size = new System.Drawing.Size(87, 32);
+            this.btnHitungMk.Size = new System.Drawing.Size(96, 32);
             this.btnHitungMk.TabIndex = 3;
             this.btnHitungMk.Text = "HitungMk";
             this.btnHitungMk.UseVisualStyleBackColor = true;
-            this.btnHitungMk.Click += new System.EventHandler(this.btnHitungMk_Click);
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(619, 340);
+            this.btnUpdate.Location = new System.Drawing.Point(617, 305);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(81, 32);
             this.btnUpdate.TabIndex = 4;
@@ -92,11 +92,22 @@
             this.txtHasil.Size = new System.Drawing.Size(285, 22);
             this.txtHasil.TabIndex = 5;
             // 
+            // btnHitungDosen
+            // 
+            this.btnHitungDosen.Location = new System.Drawing.Point(205, 358);
+            this.btnHitungDosen.Name = "btnHitungDosen";
+            this.btnHitungDosen.Size = new System.Drawing.Size(100, 30);
+            this.btnHitungDosen.TabIndex = 6;
+            this.btnHitungDosen.Text = "HitungDosen";
+            this.btnHitungDosen.UseVisualStyleBackColor = true;
+            this.btnHitungDosen.Click += new System.EventHandler(this.btnHitungDosen_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnHitungDosen);
             this.Controls.Add(this.txtHasil);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnHitungMk);
@@ -105,7 +116,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,6 +129,7 @@
         private System.Windows.Forms.Button btnHitungMk;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.TextBox txtHasil;
+        private System.Windows.Forms.Button btnHitungDosen;
     }
 }
 
