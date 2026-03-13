@@ -13,9 +13,11 @@ namespace PraktikumADO
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Koneksi()
         {
-
+            conn = new SqlConnection
+                ("Data Source=JONNISHEREEE\\FADJAR; Initial Catalog=DBAkademikADO; Integrated Security=True");
         }
+
     }
 }
