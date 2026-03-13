@@ -56,7 +56,7 @@ namespace PraktikumADO
             }
         }
 
-        private void btnHitungMK_Click(object sender, EventArgs e)
+        private void btnHitungMk_Click(object sender, EventArgs e)
         {
             try
             {
@@ -69,13 +69,13 @@ namespace PraktikumADO
 
                 int jumlah = (int)cmd.ExecuteScalar();
 
-                txtHasil.Text = jumlah.ToString();
+                txtHasil.Text = jumlah.ToString(); 
 
                 conn.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Error Hitung MK: " + ex.Message);
             }
         }
 
@@ -127,6 +127,25 @@ namespace PraktikumADO
                 conn.Close();
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
+        }
+
+        private void btnInsertProdi_Click(object sender, EventArgs e)
+        {
+            try {
+                Koneksi();
+                conn.Open();
+
+                string query = "INSERT INTO Program_Studi (KodeProdi, NamaProdi) VALUES ('MI01','Manajemen Informatika')";
+
+                cmd = new SqlCommand(query, conn);
+
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Data Prodi Berhasil Ditambahkan!");
+
+                conn.Close();
+            }
+            catch (Exception ex) { MessageBox.Show("Gagal/Sudah ada: " + ex.Message); }
         }
     }
 }
