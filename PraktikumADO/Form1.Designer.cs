@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnConnect = new System.Windows.Forms.Button();
             this.btnHitungMhs = new System.Windows.Forms.Button();
+            this.btnHitungMk = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -60,11 +61,21 @@
             this.btnHitungMhs.Text = "HitungMhs";
             this.btnHitungMhs.UseVisualStyleBackColor = true;
             // 
+            // btnHitungMk
+            // 
+            this.btnHitungMk.Location = new System.Drawing.Point(445, 340);
+            this.btnHitungMk.Name = "btnHitungMk";
+            this.btnHitungMk.Size = new System.Drawing.Size(75, 23);
+            this.btnHitungMk.TabIndex = 3;
+            this.btnHitungMk.Text = "HitungMk";
+            this.btnHitungMk.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnHitungMk);
             this.Controls.Add(this.btnHitungMhs);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.label1);
@@ -80,6 +91,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.Button btnHitungMhs;
+        private System.Windows.Forms.Button btnHitungMk;
     }
 }
 
