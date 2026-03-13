@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btnConnect = new System.Windows.Forms.Button();
+            this.btnHitungMhs = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -50,11 +51,21 @@
             this.btnConnect.Text = "Connect";
             this.btnConnect.UseVisualStyleBackColor = true;
             // 
+            // btnHitungMhs
+            // 
+            this.btnHitungMhs.Location = new System.Drawing.Point(294, 340);
+            this.btnHitungMhs.Name = "btnHitungMhs";
+            this.btnHitungMhs.Size = new System.Drawing.Size(75, 23);
+            this.btnHitungMhs.TabIndex = 2;
+            this.btnHitungMhs.Text = "HitungMhs";
+            this.btnHitungMhs.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnHitungMhs);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -68,6 +79,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnConnect;
+        private System.Windows.Forms.Button btnHitungMhs;
     }
 }
 
